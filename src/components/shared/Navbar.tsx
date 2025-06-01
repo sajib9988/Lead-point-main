@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Home, Info, Phone, Hammer, FolderKanban } from 'lucide-react';
+import { Menu, X, Home, Info, Phone, Hammer } from 'lucide-react';
 import { ModeToggle } from '@/components/theme/ModeToggle';
 import { motion, AnimatePresence } from 'framer-motion';
 

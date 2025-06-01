@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
     await sendEmailToAdmin({ name, email, subject, message });
 
     return NextResponse.json({ success: true, message: '✅ Message sent to admin!' });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('❌ Email send error:', error);
     return NextResponse.json(
       { success: false, message: '❌ Failed to send message. Try again later.' },

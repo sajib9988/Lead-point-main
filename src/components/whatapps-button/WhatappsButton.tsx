@@ -1,6 +1,6 @@
 'use client';
 
-import { MessageCircle } from 'lucide-react'; // Optional, not used now
+
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 

@@ -83,7 +83,7 @@ export interface Payment {
   method: PaymentMethod;
   status: PaymentStatus;
   transactionId?: string;
-  paymentGatewayData?: any;
+  paymentGatewayData?: unknown;
   createdAt: string;
   updatedAt: string;
   user?: User;
@@ -168,4 +168,3 @@ export interface MediaParams {
   sortBy?: string;
   sortOrder?: 'asc' | 'desc';
 }
-  
