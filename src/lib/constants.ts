@@ -33,7 +33,7 @@ export const services: Service[] = [
     longDescription: 'Our email marketing services help you build strong customer relationships, nurture leads, and drive sales. We design, implement, and manage effective email campaigns tailored to your business goals, from newsletters to automated sequences.',
     icon: Mail,
     slug: '/services/email-marketing',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://i.ibb.co/b5MmH8Cy/email-marketing.jpg',
     dataAiHint: 'email marketing'
   },
   {
@@ -43,7 +43,7 @@ export const services: Service[] = [
     longDescription: 'We specialize in creating and executing lead generation strategies that deliver measurable results. Using a mix of digital channels and proven techniques, we help you identify and attract potential customers interested in your offerings.',
     icon: Users,
     slug: '/services/lead-generation',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://i.ibb.co/DHWXR47T/lead-generation.jpg',
     dataAiHint: 'lead generation'
   },
   {
@@ -53,7 +53,7 @@ export const services: Service[] = [
     longDescription: 'Our content marketing services focus on creating and distributing compelling content that resonates with your target audience. From blog posts and articles to infographics and case studies, we help you establish thought leadership and drive engagement.',
     icon: FileText,
     slug: '/services/content-marketing',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://i.ibb.co/S4WgCnpm/content-marketing-1.jpg',
     dataAiHint: 'content strategy'
   },
   {
@@ -63,10 +63,11 @@ export const services: Service[] = [
     longDescription: 'Leverage the power of video with our YouTube marketing expertise. We help you create engaging video content, optimize your channel, and run effective advertising campaigns to boost visibility, subscribers, and conversions.',
     icon: Youtube,
     slug: '/services/youtube-marketing',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://i.ibb.co/vvfQYYHY/You-Tube-Marketing.png',
     dataAiHint: 'video marketing'
   },
 ];
+
 
 export interface TeamMember {
   id: string;
@@ -83,9 +84,9 @@ export interface TeamMember {
 
 export const teamMembers: TeamMember[] = [
   {
-    id: 'sarah-chen',
-    name: 'Sarah Chen',
-    role: 'Email Marketing Specialist',
+    id: 'Kamrul Hasan',
+    name: 'Kamrul Hasan',
+    role: 'Founder & CEO',
     bio: 'Sarah crafts compelling email campaigns that nurture leads and drive conversions, leveraging data analytics for optimal performance.',
     avatar: 'https://placehold.co/200x200.png',
     dataAiHint: 'woman professional',
