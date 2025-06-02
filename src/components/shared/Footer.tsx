@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
 
           {/* Resources */}
-          <div className="font-medium">
+          {/* <div className="font-medium">
             <h3 className="text-lg mb-4 text-blue-800 dark:text-yellow-400">Resources</h3>
             <ul className="space-y-2">
               {['/blog', '/case-studies', '/faq', '/privacy'].map((path, i) => (
@@ -69,7 +69,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div className="font-medium">
