@@ -10,7 +10,7 @@ const CommonLayout = ({ children }: { children: React.ReactNode }) => {
   <div className="m-2 rounded-xl">
   <Navbar  />
   <main className="min-h-screen mt-6 p-2  ">{children}</main>
-     <WhatsAppsButton phoneNumber="+8801916520032" message="Hello! I'm interested in LeadFlow's services." />
+     <WhatsAppsButton phoneNumber="+8801916520032" message="Hello! I'm interested in LeadPoint's services." />
 <Footer />
 </div>
   )
