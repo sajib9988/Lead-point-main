@@ -17,6 +17,10 @@ const mockBenefits = [
 
 
 export default function ServiceDetail({ service }: ServiceDetailProps) {
+
+
+  console.log("Service Detail Component Rendered", service);
+
   return (
     <div className="container mx-auto px-4 border-2 md:px-6 py-2 md:py-4">
       <div className="grid md:grid-cols-2 gap-6 items-center">

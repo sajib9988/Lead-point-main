@@ -1,3 +1,5 @@
+import { JwtPayload } from "jwt-decode";
+
 export interface IUser{
     userId: string;
     name: string;
@@ -168,3 +170,16 @@ export interface MediaParams {
   sortBy?: string;
   sortOrder?: 'asc' | 'desc';
 }
+
+
+export type TUser = {
+  id: string;
+  name: string;
+  email: string;
+  password?: string; // Made optional
+  createdAt: string;
+  updatedAt: string;
+
+};
+
+export type DecodedUser = JwtPayload & TUser;
