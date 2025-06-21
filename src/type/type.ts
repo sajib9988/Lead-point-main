@@ -183,3 +183,29 @@ export type TUser = {
 };
 
 export type DecodedUser = JwtPayload & TUser;
+
+
+
+export interface ITeamMember {
+  id: string;
+  name: string;
+  role: string;
+  avatar: string;
+  bio: string;
+  
+  socials: {
+    platform: string;
+    url: string;
+  }[];
+}
+
+
+export interface IServiceInput {
+  id?: string; // Optional for new services
+  title: string;
+  shortDescription: string;
+  longDescription: string;
+  slug: string;
+  icon?: string;
+  image?: string;
+}

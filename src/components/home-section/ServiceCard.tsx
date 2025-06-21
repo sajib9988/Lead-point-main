@@ -4,30 +4,38 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Button } from '@/components/ui/button';
 
 import { ArrowRight } from 'lucide-react';
-import { Service } from '@/lib/constants';
+
+import { IServiceInput } from '@/type/type';
 
 interface ServiceCardProps {
-  service: Service;
+  service: IServiceInput;
 }
 
 export default function ServiceCard({ service }: ServiceCardProps) {
-  const { title, shortDescription, icon: Icon, slug, image, dataAiHint } = service;
+  const { title, shortDescription, icon, slug, image } = service;
   return (
     <Card className="flex flex-col overflow-hidden h-full  hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 border-4 border-white shadow-lg">
       <CardHeader className="p-0">
         <div className="relative h-48 w-full p-1">
           <Image 
-            src={image} 
+            src={image || '/placeholder.png'} 
             alt={title} 
             layout="fill" 
             objectFit="cover"
-            data-ai-hint={dataAiHint}
           />
         </div>
       </CardHeader>
       <CardContent className="flex flex-col flex-grow p-6">
         <div className="flex items-center mb-3">
-          <Icon className="h-8 w-8 text-primary mr-3" />
+          {icon && typeof icon === 'string' ? (
+            <Image
+              src={icon}
+              alt="icon"
+              width={32}
+              height={32}
+              className="h-8 w-8 text-primary mr-3"
+            />
+          ) : null}
           <CardTitle className="text-2xl font-semibold">{title}</CardTitle>
         </div>
         <CardDescription className="text-base text-muted-foreground mb-4 flex-grow">{shortDescription}</CardDescription>
