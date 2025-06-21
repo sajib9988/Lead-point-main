@@ -1,5 +1,3 @@
-import type { LucideIcon } from 'lucide-react';
-
 export interface NavLink {
   href: string;
   label: string;
@@ -17,7 +15,7 @@ export interface Service {
   title: string;
   shortDescription: string;
   longDescription: string;
-  icon: LucideIcon;
+  icon: string; // Changed from LucideIcon to string
   slug: string;
   image: string;
 
