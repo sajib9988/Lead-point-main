@@ -1,7 +1,7 @@
 
 import PageHeader from '@/components/DetailsPage/Pageheader';
 import ServiceCard from '@/components/home-section/ServiceCard';
-import { services } from '@/lib/constants';
+
 
 export default function ServicesPage() {
   return (
