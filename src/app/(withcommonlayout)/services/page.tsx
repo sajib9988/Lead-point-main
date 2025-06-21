@@ -17,26 +17,13 @@ export default function ServicesPage() {
     const fetchServices = async () => {
       try {
         setLoading(true);
-        const response = await getAllServices();
-        // Assuming response is the array directly, or response.data if it's nested
-        // Based on ServicesOverview.tsx, it seems getAllServices() returns the array of services directly.
-        // However, the API call in addservice/index.ts returns res.json() which might be an object like { success: ..., data: [] }
-        // Let's check the structure from getAllServices more carefully.
-        // The log in addservice/index.ts is `console.log("✅ All Services Response:", data);` where data is `await res.json()`.
-        // The log in ServicesOverview.tsx is `const data = await getAllServices(); const mapped = data.map(...)`
-        // This implies getAllServices returns the array.
-
-        // Let's assume `response` is the array of services.
-        // If `response.data` is the actual array, this will need adjustment.
-        // For now, sticking to the simpler assumption based on ServicesOverview's direct usage.
+        const response = await getAllServices();   
         if (Array.isArray(response)) {
           setServices(response);
         } else if (response && Array.isArray(response.data)) { // Common API pattern
           setServices(response.data);
         } else {
-          // This case might occur if the response structure is unexpected.
-          // console.warn("Unexpected response structure from getAllServices:", response);
-          // Set to empty array or handle as an error. For now, assume it might be an empty valid response.
+        
           setServices([]);
         }
       } catch (err) {
