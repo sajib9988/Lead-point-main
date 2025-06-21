@@ -12,7 +12,7 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({ service }: ServiceCardProps) {
-  const { title, shortDescription, icon, slug, image } = service;
+  const { id, title, shortDescription, icon,  image } = service;
   return (
     <Card className="flex flex-col overflow-hidden h-full  hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 border-4 border-white shadow-lg">
       <CardHeader className="p-0">
@@ -40,7 +40,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
         </div>
         <CardDescription className="text-base text-muted-foreground mb-4 flex-grow">{shortDescription}</CardDescription>
         <Button asChild variant="outline" className="mt-auto w-full group">
-          <Link href={slug}>
+          <Link href={id ?? "/"}>
             Learn More <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </Button>

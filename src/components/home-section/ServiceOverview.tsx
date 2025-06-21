@@ -15,8 +15,13 @@ export default function ServicesOverview() {
     const fetchServices = async () => {
       try {
         const data = await getAllServices();
-        // Map the API data to your IServiceInput shape:
-        const mapped = data.map((item: IServiceInput) => ({
+        console.log("✅ Services fetched successfully:", data); // Debugging log
+        const serviceArray = Array.isArray(data)
+          ? data
+          : Array.isArray(data.data)
+            ? data.data
+            : [];
+        const mapped = serviceArray.map((item: IServiceInput) => ({
           id: item.id,
           title: item.title,
           shortDescription: item.shortDescription,
