@@ -4,7 +4,7 @@
 import { useEffect, useState } from 'react';
 import PageHeader from '@/components/DetailsPage/Pageheader';
 import ServiceCard from '@/components/home-section/ServiceCard';
-import { getAllServices } from '@/service/addservice';
+import { getAllServices } from '@/service/addService';
 import { IServiceInput } from '@/type/type'; // Assuming IServiceInput is the correct type for service items
 import { Skeleton } from '@/components/ui/skeleton'; // For loading state
 

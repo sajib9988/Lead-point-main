@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import ServiceCard from './ServiceCard';
 import { IServiceInput } from '@/type/type';
-import { getAllServices } from '@/service/addservice';
+import { getAllServices } from '@/service/addService';
 
  // your interface
 
